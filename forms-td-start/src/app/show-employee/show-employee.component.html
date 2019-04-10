@@ -1,0 +1,23 @@
+<div class="container">
+  <h2>Employee Table</h2>
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Date of Birth</th>
+      <th>Gender</th>
+      <th>Country</th>
+    </tr>
+    </thead>
+    <tbody *ngFor="let employee of employees">
+    <tr>
+      <td>{{employee.username}}</td>
+      <td>{{employee.email}}</td>
+      <td>{{employee.dateOfBirth}}</td>
+      <td>{{employee.gender}}</td>
+      <td>{{employee.country}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
